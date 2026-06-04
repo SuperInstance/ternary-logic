@@ -1,0 +1,6 @@
+[package]
+name = "ternary-logic"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Advanced ternary logic systems: Kleene, Łukasiewicz, Bochvar, Gödel-Dummett logics with truth tables, entailment, tautology checking, and modal extensions"
