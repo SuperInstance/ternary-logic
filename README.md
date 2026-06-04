@@ -150,6 +150,14 @@ Each logic system defines its own semantics for the four binary connectives, but
 | `ternary-attention` | Attention compatibility uses ternary conjunction |
 | `ternary-locks` | Lock composition uses AND/OR/NOT from ternary logic |
 
+## Known Limitations
+
+- **`Formula::Atom` only accepts literal `Ternary` values.** There is no variable binding — `is_tautology_binary` tests all 9 combinations of two fixed truth values, not true propositional variable satisfiability over an arbitrary domain.
+- **No proof system.** The crate supports evaluation and truth-table generation but provides no sequent calculus, resolution, or automated theorem proving.
+- **K3 has no tautologies.** Any Kleene formula containing `Unknown` evaluates to `Unknown`, which is not a designated (true) value. This is by design but may surprise users expecting classical tautologies like excluded middle to hold.
+- **`LogicSystem::GödelDummett` uses a non-ASCII identifier** (`Gödel` with umlaut), which may cause encoding issues in some build environments.
+- **Entailment is checked only over the three fixed truth values**, not over arbitrary models.
+
 ## License
 
 MIT
