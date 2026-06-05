@@ -158,6 +158,14 @@ Each logic system defines its own semantics for the four binary connectives, but
 - **`LogicSystem::GödelDummett` uses a non-ASCII identifier** (`Gödel` with umlaut), which may cause encoding issues in some build environments.
 - **Entailment is checked only over the three fixed truth values**, not over arbitrary models.
 
+## See Also
+
+- **ternary-circuit** — Circuit and logic design with ternary values
+- **ternary-fuzzy** — Fuzzy logic with ternary membership
+- **ternary-lattice** — Lattice structures for ternary ordering
+- **ternary-ring** — Ring arithmetic for ternary algebra
+- **ternary-hardware** — Hardware abstraction for balanced ternary computing
+
 ## License
 
 MIT
